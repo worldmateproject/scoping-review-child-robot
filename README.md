@@ -1,10 +1,9 @@
 # Systematic-Review
 This review examines the role of Human-Robot and Child-Robot Interaction in early childhood education, with a focus on language acquisition. It explores how social robots process multimodal inputs (speech, gaze, gestures) to enhance communication, sustain engagement, and adapt to children’s needs. Key topics include adaptive learning systems, emotion detection, real-time interaction, and ethical considerations such as privacy and emotional well-being. By highlighting current advancements and challenges, this paper provides insights for improving robot-assisted language learning and child development.
 
-**Systematic Review Query Analysis Report**
+## Pre-Query Analysis Report
 
-***Query Summary***
-After conducting a systematic filtering and analysis of the queries designed to retrieve relevant papers from IEEE Xplore, the query labeled as Q10 is identified as the most comprehensive query. This query encompasses all the papers retrieved by the previous nine queries (Q1-Q9). Below is the detailed breakdown:
+This report presents an analysis of the queries used in the systematic review process. Each query was assessed for its ability to capture relevant studies, and based on this evaluation, the most comprehensive query was identified. 
 
 | Query ID | Query Key Search | Papers Retrieved (IEEE Xplore) |
 |----------|------------------|--------------------------------|
@@ -19,13 +18,7 @@ After conducting a systematic filtering and analysis of the queries designed to 
 | Q9       | (((“Human-Robot” OR “Child-Robot” OR “Interaction”) AND (“Robot*”) AND (“Child*” OR “Communit*” OR “Social*”) AND (“Education*” OR “School*” OR “Learn*” OR “Caregiver” OR “Child-Directed Speech” OR “Language” OR “Communication” OR “Teach*” OR “Talker”)) ) | 4065 |
 | Q10      | ((“Human-Robot” OR “Child-Robot” OR “Interaction”) AND (“Robot*”) AND (“Child*” OR “Communit*” OR “Social*”) AND (“Education*” OR “School*” OR “Learn*” OR “Caregiver” OR “Child-Directed” OR "Speech" OR “Languag*” OR “Communicat*” OR “Teach*” OR “Talker”)) | **4165** |
 
-
-***Description:***
-
-1. After analyzing the queries for the systematic review, Q10 has been identified as the most comprehensive query.
-2. Reason: Query Q10 retrieves 4165 papers, covering all papers retrieved by the previous nine queries (Q1–Q9) from IEEE Xplore.
-3. Key Action: Use Q10 as the final query for systematic review to ensure no relevant paper is missed.
-
+The analysis showed that Query Q10 retrieved the largest number of papers (4,165), including all papers captured by the previous nine queries (Q1–Q9) from IEEE Xplore. As a result, Q10 is considered the most comprehensive query for this systematic review and will be used as the final query to ensure that no relevant papers are overlooked.
 ![Image](https://github.com/user-attachments/assets/29ef2ab1-f8d5-4cc6-860c-0f37f38fcbd2)
 
 
