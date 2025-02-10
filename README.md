@@ -22,6 +22,72 @@ The analysis showed that Query Q10 retrieved the largest number of papers (4,165
 ![Image](https://github.com/user-attachments/assets/29ef2ab1-f8d5-4cc6-860c-0f37f38fcbd2)
 
 
+# Research Paper Retrieval Statistics
+
+## Overview
+
+This repository presents data on the number of research papers retrieved using **Q10** across six major academic databases: IEEE, Web of Science (WoS), ACM, Scopus, ScienceDirect (SD), and PubMed. The data covers the years **2015 to 2025**, showing the trend of research paper retrieval over time.
+
+The primary objective of this study is to analyze the availability and growth of research articles in various academic databases, providing insights into publication trends in recent years.
+
+## Yearly Paper Count
+
+The table below displays the number of research papers retrieved from each database for the years **2015 to 2025**.
+
+| Year  | IEEE | WoS  | ACM  | Scopus | SD   | PubMed | Total  |
+|-------|------|------|------|--------|------|--------|--------|
+| 2015  | 233  | 210  | 369  | 447    | 352  | 37     |        |
+| 2016  | 294  | 264  | 481  | 431    | 348  | 43     |        |
+| 2017  | 309  | 313  | 514  | 545    | 404  | 51     |        |
+| 2018  | 350  | 373  | 644  | 577    | 448  | 70     |        |
+| 2019  | 401  | 408  | 553  | 648    | 560  | 75     |        |
+| 2020  | 373  | 477  | 830  | 1023   | 749  | 108    |        |
+| 2021  | 424  | 506  | 924  | 1021   | 925  | 188    |        |
+| 2022  | 596  | 550  | 1062 | 859    | 988  | 205    |        |
+| 2023  | 563  | 483  | 1258 | 893    | 1109 | 172    |        |
+| 2024  | 606  | 592  | 1743 | 1026   | 1430 | 157    |        |
+| 2025  | 10   | 24   | 83   | 53     | 439  | 12     |        |
+| **Total** | **4159** | **4200** | **8461** | **7523** | **7752** | **1118** | **33213** |
+
+![Illustration](Papers Retrieve.png)
+
+## Summary Table
+
+The following table provides a summary of the total number of papers retrieved from each database.
+
+| Engine Search | IEEE | WoS  | ACM  | Scopus | SD   | PubMed | Total  |
+|--------------|------|------|------|--------|------|--------|--------|
+| Number of Papers | 4159 | 4200 | 8461 | 7523 | 7752 | 1118 | 33213 |
+
+## Explanation
+
+This dataset represents the **retrieval of research papers** using Q10 from **six different academic databases**. The numbers indicate how many papers were found in each database for a given year.
+
+### Key Observations:
+1. **Overall Growth**:  
+   - The number of retrieved papers increased significantly from 2015 to 2024.
+   - The highest number of papers retrieved was in **2024**, showing a peak in research publications.
+  
+2. **Database Differences**:  
+   - **ACM** has the highest number of retrieved papers (**8,461 total**).
+   - **PubMed** has the lowest count (**1,118 total**), likely due to its focus on medical and life sciences.
+  
+3. **Decrease in 2025**:  
+   - A sudden drop in 2025 may indicate incomplete data collection or a shift in research trends.
+
+## Conclusion
+
+The data highlights the increasing volume of academic research over the years, particularly in **ACM, Scopus, and SD** databases. The significant rise in papers retrieved suggests that more research is being published and indexed across multiple databases.
+
+These trends can be useful for researchers, librarians, and institutions to understand the **growth of academic publishing** and the **importance of choosing the right database** for literature searches.
+
+## Illustration
+
+Below is an illustration summarizing the research retrieval statistics.
+
+![Illustration](Papers Retrieve-1.png)
+
+
 
 
 
