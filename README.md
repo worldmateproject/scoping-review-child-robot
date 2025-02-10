@@ -30,7 +30,7 @@ This repository presents data on the number of research papers retrieved using *
 
 The primary objective of this study is to analyze the availability and growth of research articles in various academic databases, providing insights into publication trends in recent years.
 
-## Yearly Paper Count
+## Yearly Paper Count and  Summary Table
 
 The table below displays the number of research papers retrieved from each database for the years **2015 to 2025**.
 
@@ -49,15 +49,17 @@ The table below displays the number of research papers retrieved from each datab
 | 2025  | 10   | 24   | 83   | 53     | 439  | 12     |        |
 | **Total** | **4159** | **4200** | **8461** | **7523** | **7752** | **1118** | **33213** |
 
-![Illustration](Survey.png)
-
-## Summary Table
 
 The following table provides a summary of the total number of papers retrieved from each database.
 
 | Engine Search | IEEE | WoS  | ACM  | Scopus | SD   | PubMed | Total  |
 |--------------|------|------|------|--------|------|--------|--------|
 | Number of Papers | 4159 | 4200 | 8461 | 7523 | 7752 | 1118 | 33213 |
+
+
+Below is an illustration summarizing the research retrieval statistics.
+![Illustration](Survey.png)
+![Illustration](SumSurvey.png)
 
 ## Explanation
 
@@ -77,15 +79,10 @@ This dataset represents the **retrieval of research papers** using Q10 from **si
 
 ## Conclusion
 
-The data highlights the increasing volume of academic research over the years, particularly in **ACM, Scopus, and SD** databases. The significant rise in papers retrieved suggests that more research is being published and indexed across multiple databases.
+The data highlights the increasing volume of academic research over the years, particularly in **ACM, Scopus, and SD** databases. The significant rise in papers retrieved suggests that more research is being published and indexed across multiple databases. These trends can be useful for researchers, librarians, and institutions to understand the **growth of academic publishing** and the **importance of choosing the right database** for literature searches.
 
-These trends can be useful for researchers, librarians, and institutions to understand the **growth of academic publishing** and the **importance of choosing the right database** for literature searches.
 
-## Illustration
 
-Below is an illustration summarizing the research retrieval statistics.
-
-![Illustration](SumSurvey.png)
 
 
 
