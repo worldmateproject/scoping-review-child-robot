@@ -49,7 +49,7 @@ The table below displays the number of research papers retrieved from each datab
 | 2025  | 10   | 24   | 83   | 53     | 439  | 12     |        |
 | **Total** | **4159** | **4200** | **8461** | **7523** | **7752** | **1118** | **33213** |
 
-![Illustration](Papers Retrieve.png)
+![Illustration](Survey.png)
 
 ## Summary Table
 
@@ -85,7 +85,7 @@ These trends can be useful for researchers, librarians, and institutions to unde
 
 Below is an illustration summarizing the research retrieval statistics.
 
-![Illustration](Papers Retrieve-1.png)
+![Illustration](SumSurvey.png)
 
 
 
