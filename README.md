@@ -25,7 +25,7 @@ The analysis showed that Query Q10 retrieved the largest number of papers (4,165
 # Research Paper Retrieval Statistics
 
 ## Overview
-This section presents data on the number of research papers retrieved using **Q10** across six major academic databases: IEEE, Web of Science (WoS), ACM, Scopus, ScienceDirect (SD), and PubMed. The data covers the years **2015 to 2025**, showing the trend of research paper retrieval over time. The primary objective of this study is to analyze the availability and growth of research articles in various academic databases, providing insights into publication trends in recent years. The table below displays the number of research papers retrieved from each database for the years  **2015 to 2025**. The second table provides a summary of the total number of papers retrieved from each database.
+This section presents data on the number of research papers retrieved using **Q10** across six major academic databases: IEEE, Web of Science (WoS), ACM, Scopus, ScienceDirect (SD), and PubMed. The data covers the years **2015 to 2025**, showing the trend of research paper retrieval over time. The primary objective of this study is to analyze the availability and growth of research articles in various academic databases, providing insights into publication trends in recent years. The table below displays the number of research papers retrieved from each database for the years  **2015 to 2025**. 
 
 | Year  | IEEE | WoS  | ACM  | Scopus | SD   | PubMed | Total  |
 |-------|------|------|------|--------|------|--------|--------|
@@ -42,13 +42,8 @@ This section presents data on the number of research papers retrieved using **Q1
 | 2025  | 10   | 24   | 83   | 53     | 439  | 12     |        |
 | **Total** | **4159** | **4200** | **8461** | **7523** | **7752** | **1118** | **33213** |
 
-| Engine Search | IEEE | WoS  | ACM  | Scopus | SD   | PubMed | Total  |
-|--------------|------|------|------|--------|------|--------|--------|
-| Number of Papers | 4159 | 4200 | 8461 | 7523 | 7752 | 1118 | 33213 |
-
-This dataset represents the **retrieval of research papers** using Q10 from **six different academic databases**. The numbers indicate how many papers were found in each database for a given year. Below is an illustration summarizing the research retrieval statistics.
+This dataset represents the **retrieval of research papers** using Q10 from **six different academic databases**. The numbers indicate how many papers were found in each database for a given year. 
 ![Illustration](Survey.png)
-![Illustration](SumSurvey.png)
 
 ## Key Observations:
 1. **Overall Growth**:  
@@ -60,7 +55,7 @@ This dataset represents the **retrieval of research papers** using Q10 from **si
 3. **Decrease in 2025**:  
    - A sudden drop in 2025 may indicate incomplete data collection or a shift in research trends.
 
-The data highlights the increasing volume of academic research over the years, particularly in **ACM, Scopus, and SD** databases. The significant rise in papers retrieved suggests that more research is being published and indexed across multiple databases. These trends can be useful for researchers, librarians, and institutions to understand the **growth of academic publishing** and the **importance of choosing the right database** for literature searches.
+The data highlights the increasing volume of academic research over the years, particularly in **ACM, Scopus, and SD** databases. The significant rise in papers retrieved suggests that more research is being published and indexed across multiple databases.
 
 
 
