@@ -59,6 +59,23 @@ The data highlights the increasing volume of academic research over the years, p
 
 
 
+## Removing Duplicates
+
+In this stage, duplicate papers are removed based on DOI and Title across multiple search engines, including IEEE, WoS, SD, Scopus, ACM, and PubMed. Additionally, review papers and those primarily presenting literature reviews are excluded. After this stage, the remaining papers are as follows:
+
+| Source  | Papers Remaining |
+|---------|----------------|
+| IEEE    | 3,954          |
+| WoS     | 2,852          |
+| Scopus  | 2,267          |
+| SD      | 7,131          |
+| ACM     | 5,672          |
+| PubMed  | 423            |
+| **Total** | **22,299** |
+
+## Filtering by Abstract, Title, and Keywords
+
+In the next stage, the remaining papers will be screened based on their Abstract, Title, and Author Keywords to filter those relevant to the study scope.
 
 
 
