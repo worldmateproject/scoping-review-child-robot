@@ -59,6 +59,8 @@ The data highlights the increasing volume of academic research over the years, p
 
 
 
+# Research Paper Processing
+
 ## Removing Duplicates
 
 In this stage, duplicate papers are removed based on DOI and Title across multiple search engines, including IEEE, WoS, SD, Scopus, ACM, and PubMed. Additionally, review papers and those primarily presenting literature reviews are excluded. After this stage, the remaining papers are as follows:
@@ -76,7 +78,62 @@ In this stage, duplicate papers are removed based on DOI and Title across multip
 ## Filtering by Abstract, Title, and Keywords
 
 In the next stage, the remaining papers will be screened based on their Abstract, Title, and Author Keywords to filter those relevant to the study scope.
+This project involves processing a CSV file containing metadata for over 20,000 research papers on child-robot interaction in education, language learning, and social development. Using the metadata (Title, Abstract, and Keywords), each paper will be assigned a **Relevance Score (0-100%)** based on predefined **inclusion** and **exclusion** criteria.
 
+## Relevance Criteria
+
+### **Inclusion Criteria (Highly Relevant Papers)**
+A paper is considered **highly relevant (80-100%)** if it meets one or more of the following criteria:
+- **Empirical or experimental research** involving child-robot interaction (not just conceptual models or theoretical discussions).
+- **Education-focused applications**, such as:
+  - **Robot tutors & AI-driven learning** (personalized education, engagement, cognitive development).
+  - **Socialization & well-being** (robot-assisted therapy, emotional support, companionship, developmental assistance).
+  - **Language acquisition** (robots aiding in vocabulary development, communication skills).
+  - **Adaptive AI-powered interactions** (machine learning models tailoring robotic responses to a child’s progress).
+  - **Children with special needs** (robot-assisted therapy for autism, speech delays, or cognitive disabilities).
+- Studies that provide **measurable outcomes** in learning, engagement, cognitive development, or socialization.
+- Research leveraging **AI, machine learning, or adaptive models** to enhance child-robot educational experiences.
+
+### **Exclusion Criteria (Less or Not Relevant Papers)**
+A paper is excluded (**scored below 60%**) if:
+- It is a **literature review, meta-analysis, or theoretical framework** rather than an empirical study.
+- It **lacks measurable outcomes** (e.g., opinion pieces, purely technical system descriptions).
+- It focuses on **general human-robot interaction (HRI)** without a clear emphasis on child-robot interaction.
+- It discusses robots in **non-relevant domains** (e.g., military, industrial applications, banking chatbots).
+
+Papers containing the following keywords are automatically marked as **Not Relevant (<60%)**:
+- “Systematic review”
+- “Meta-analysis”
+- “Survey of studies”
+- “Overview of research”
+- “Theoretical framework”
+- “Trends in research”
+- “Analysis of previous work”
+
+Even if such papers discuss child-robot interaction, they are **excluded** due to their lack of original empirical insights.
+
+## Scoring Guidelines
+
+After filtering, each paper will be assigned a **Relevance Score (0-100%)** based on the depth of empirical evidence, measurable outcomes, and direct relevance to child-robot interaction.
+
+- **80-100% (Highly Relevant)**: Papers that strongly align with the **inclusion criteria**, demonstrating clear **empirical results** in education, language learning, or child development. These studies typically present well-defined experiments, measurable impacts, and AI-driven innovations for children’s learning and interaction.
+  - **Example**: _“This paper scored 90% because it presents a randomized controlled trial showing improved language acquisition in preschoolers using an AI-driven robot tutor.”_
+
+- **60-79% (Moderately Relevant)**: Papers that are **somewhat related** but may **lack strong empirical validation**, have an **indirect focus** on child-robot interaction, or provide only **exploratory insights** without clear experimental evidence.
+  - **Example**: _“This paper scored 70% because it discusses child-robot interactions in therapy settings but lacks concrete experimental results.”_
+
+- **Below 60% (Not Relevant)**: Papers that are **theoretical, literature reviews, or focus on broader HRI** without specific child-related applications. These papers often fail to provide **measurable outcomes** or **direct experimental evidence**.
+  - **Example**: _“This paper scored 50% because it is a review of past studies without introducing new empirical findings.”_
+
+## Output Format
+
+The final CSV file will retain all original metadata (**Title, Abstract, Keywords**) and add the following fields:
+- **Relevance Score (0-100%)**
+- **Relevant (Yes/No)**
+- **Reason for Score**:
+  - **Main idea of the study** – What the research is about.
+  - **Primary focus** – How it relates to child-robot interaction.
+  - **What it does not focus on** – Why it might be less relevant or not fully aligned.
 
 
 
