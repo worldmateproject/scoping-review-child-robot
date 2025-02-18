@@ -111,9 +111,36 @@ The final dataset retains all original metadata (**Title, Abstract, Keywords**) 
   - **Primary focus** – How it relates to child-robot interaction.
   - **What it does not focus on** – Why it might be less relevant or not fully aligned.
 
+This classification ensures that only **empirical** and **practical** research on child-robot interaction is included for further analysis, excluding non-relevant or theoretical papers. Based on the initial screening of titles and abstracts from various databases, the total number of relevant papers identified is **6412**.
+
+| Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
+|---------|------|------|------|--------|------|--------|-------|
+| Relevant | 1407 | 1222 | 1501 | 865    | 1331 | 86     | 6412  |
+
+The filtering process was conducted based on predefined criteria. While some papers might not be directly related, the criteria were intentionally set broader to ensure relevant papers were not excluded. This approach allowed us to capture all studies within the scope of our research.
+
 ---
 
-This classification ensures that only **empirical** and **practical** research on child-robot interaction is included for further analysis, excluding non-relevant or theoretical papers.
+### Refined Filtering Scope
+The refined filtering process focuses specifically on **child-robot interaction in educational settings**. The selection criteria include:
+
+- **Empirical or experimental research** on child-robot interaction, particularly in:
+  - Language acquisition, communication skills, or vocabulary development (excluding purely conceptual models or theoretical discussions).
+- **Caregiving and emotional support applications**, such as:
+  - Robot-assisted language learning (e.g., teaching new words, speech production, pronunciation, grammar).
+  - Vocabulary enhancement (e.g., adaptive responses to a child's speech, interactive storytelling, conversational agents).
+  - Communication skill development (e.g., dialogue engagement, prompting verbal responses, social interaction facilitation).
+  - Speech therapy or special needs support (e.g., for children with autism, speech delays, or cognitive disabilities).
+  - Adaptive, AI-powered interactions that tailor learning to a child's linguistic progress using machine learning.
+  - Studies measuring quantifiable outcomes in **language acquisition, verbal engagement, or communication skills**.
+  - AI-driven research enhancing **natural conversation abilities, interactive learning, and social engagement** through verbal communication.
+
+
+| Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
+|---------|------|------|------|--------|------|--------|-------|
+| Relevant | 604  | 576  | 477  | 370    | 429  | 46     | 2502  |
+
+This refined dataset provides a focused selection of studies that align with our research objectives in child-robot interaction for educational and developmental purposes.
 
 
 
