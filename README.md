@@ -1,5 +1,7 @@
 # Systematic-Review
+
 This review examines the role of Human-Robot and Child-Robot Interaction in early childhood education, with a focus on language acquisition. It explores how social robots process multimodal inputs (speech, gaze, gestures) to enhance communication, sustain engagement, and adapt to children’s needs. Key topics include adaptive learning systems, emotion detection, real-time interaction, and ethical considerations such as privacy and emotional well-being. By highlighting current advancements and challenges, this paper provides insights for improving robot-assisted language learning and child development.
+
 ---
 
 ## Pre-Query Analysis Report
