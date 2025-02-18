@@ -97,14 +97,6 @@ A paper is classified as **Not Relevant** if:
 - **Automatic Literature Review & Theoretical Work Detection**:  
   Papers containing the following keywords in the **Title** or **Abstract** are automatically marked as **Not Relevant**, even if they discuss **child-robot interaction**, due to their lack of original empirical insights: “Systematic review”, “Meta-analysis”, “Survey of studies”, “Overview of research”, “Theoretical framework”, “Trends in research”, “Analysis of previous work”, “State of the art”, “Bibliometric analysis”, “Scoping review”. “Comprehensive review”, “A decade of research”, “A review of”, “A survey on”
 
-#### Output Format
-The final dataset retains all original metadata (**Title, Abstract, Keywords**) and adds the following fields:
-- **Relevant (Yes/No)**
-- **Reason for Classification**:
-  - **Main idea of the study** – What the research is about.
-  - **Primary focus** – How it relates to child-robot interaction.
-  - **What it does not focus on** – Why it might be less relevant or not fully aligned.
-
 This classification ensures that only **empirical** and **practical** research on child-robot interaction is included for further analysis, excluding non-relevant or theoretical papers. Based on the initial screening of titles and abstracts from various databases, the total number of relevant papers identified is **6412**.
 
 | Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
@@ -117,7 +109,6 @@ The filtering process was conducted based on predefined criteria. While some pap
 
 ### Refined Filtering Scope
 The refined filtering process focuses specifically on **child-robot interaction in educational settings**. The selection criteria include:
-
 - **Empirical or experimental research** on child-robot interaction, particularly in:
   - Language acquisition, communication skills, or vocabulary development (excluding purely conceptual models or theoretical discussions).
 - **Caregiving and emotional support applications**, such as:
@@ -128,7 +119,6 @@ The refined filtering process focuses specifically on **child-robot interaction 
   - Adaptive, AI-powered interactions that tailor learning to a child's linguistic progress using machine learning.
   - Studies measuring quantifiable outcomes in **language acquisition, verbal engagement, or communication skills**.
   - AI-driven research enhancing **natural conversation abilities, interactive learning, and social engagement** through verbal communication.
-
 
 | Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
 |---------|------|------|------|--------|------|--------|-------|
