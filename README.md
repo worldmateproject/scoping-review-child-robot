@@ -1,18 +1,20 @@
-## Systematic Review on Child-Robot Interaction in Early Childhood Education
+# 📚 README.md
 
-This systematic review examines the methodologies and impacts of Human-Robot Interaction (HRI) and Child-Robot Interaction (CRI) within early childhood education, emphasizing language acquisition, adaptive learning systems, and multimodal communication (speech, gaze, gestures). It addresses the role of social robots in enhancing engagement, learning outcomes, and developmental progress, alongside ethical considerations like privacy and emotional well-being.
+## 🤖 Systematic Review: Child-Robot Interaction
 
-## Search Query
+This systematic review examines methodologies and impacts of Child-Robot Interaction (CRI) across various domains, focusing particularly on language acquisition, adaptive learning systems, multimodal communication (speech, gaze, gestures), and emotional and social development. It highlights how social robots enhance engagement, learning outcomes, and developmental progress, along with addressing ethical concerns such as privacy and emotional well-being.
 
-The comprehensive query utilized to retrieve relevant studies from academic databases:
+## 🔍 Comprehensive Search Query
+
+The extensive query used to retrieve relevant studies from academic databases:
 
 ```
-(("Human-Robot" OR "Child-Robot" OR "Interaction") AND ("Robot*") AND ("Child*" OR "Communit*" OR "Social*") AND ("Education*" OR "School*" OR "Learn*" OR "Caregiver" OR "Child-Directed" OR "Speech" OR "Languag*" OR "Communicat*" OR "Teach*" OR "Talker"))
+(("Child-Robot" OR "Interaction") AND ("Robot*") AND ("Child*" OR "Communit*" OR "Social*") AND ("Education*" OR "School*" OR "Learn*" OR "Caregiver" OR "Child-Directed" OR "Speech" OR "Languag*" OR "Communicat*" OR "Teach*" OR "Talker"))
 ```
 
 This query retrieved **4,165 papers** from IEEE Xplore.
 
-## Paper Retrieval (2015-2025)
+## 📈 Paper Retrieval Statistics (2015-2025)
 
 Retrieval statistics from IEEE, Web of Science (WoS), ACM, Scopus, ScienceDirect (SD), and PubMed:
 
@@ -31,37 +33,39 @@ Retrieval statistics from IEEE, Web of Science (WoS), ACM, Scopus, ScienceDirect
 | 2025      | 10   | 24   | 83   | 53     | 439  | 12     | 621       |
 | **Total** | 4159 | 4200 | 8461 | 7523   | 7752 | 1118   | **33213** |
 
-### Key Trends
+![Paper Retrieval Illustration](Survey-1.png)
 
-* Publication volume significantly increased (2015-2024), peaking in 2024.
-* ACM yielded the highest number of papers; PubMed had the fewest due to specific domain relevance.
-* Data for 2025 suggests incomplete data or changing research interests.
+### 🔑 Key Insights
 
-## Duplicate and Irrelevant Paper Removal
+* 📊 **Growth Trend**: Publication volume increased significantly (2015-2024), peaking notably in 2024.
+* 🎯 **Database Insights**: ACM consistently had the highest paper retrieval; PubMed the lowest due to domain specificity.
+* ⚠️ **Data Anomaly**: The drop in 2025 suggests incomplete data or a shift in research interests.
 
-Duplicate entries and papers categorized as theoretical frameworks or literature reviews were excluded:
+## ✂️ Duplicate and Irrelevant Paper Removal
+
+Duplicate entries and non-empirical papers were excluded:
 
 | Source           | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total     |
 | ---------------- | ---- | ---- | ---- | ------ | ---- | ------ | --------- |
 | Remaining Papers | 3954 | 2852 | 2267 | 7131   | 5672 | 423    | **22299** |
 
-## Initial Relevance Filtering
+## 🔎 Initial Relevance Filtering
 
-Screening abstracts, titles, and keywords against set criteria:
+Screening abstracts, titles, and keywords against specific inclusion and exclusion criteria:
 
-### Inclusion Criteria
+### ✅ Inclusion Criteria
 
-* Empirical studies involving child-robot interactions.
+* Empirical studies focusing on child-robot interactions.
 * Educational and developmental outcomes (language, social skills).
-* Quantifiable engagement and cognitive development measures.
+* Measurable engagement and cognitive development outcomes.
 * Typically developing child populations.
 
-### Exclusion Criteria
+### ❌ Exclusion Criteria
 
-* Non-empirical papers (reviews, theoretical discussions).
-* Papers lacking clear educational outcomes.
-* General HRI without specific child focus.
-* Neurodivergent populations or unrelated contexts.
+* Non-empirical papers (reviews, theoretical frameworks).
+* Studies lacking clear developmental or educational outcomes.
+* General robotic interactions not focused specifically on children.
+* Studies involving neurodivergent populations or unrelated contexts.
 
 Initial screening identified **6412 relevant papers**:
 
@@ -69,20 +73,20 @@ Initial screening identified **6412 relevant papers**:
 | -------- | ---- | ---- | ---- | ------ | ---- | ------ | ----- |
 | Relevant | 1407 | 1222 | 1501 | 865    | 1331 | 86     | 6412  |
 
-## Refined Filtering
+## 🎯 Refined Filtering Process
 
-Further filtering emphasized studies explicitly addressing typically developing children and language development:
+Focused on studies explicitly addressing typically developing children and their language and communication development:
 
 | Source   | IEEE | WoS | SD  | Scopus | ACM | PubMed | Total    |
 | -------- | ---- | --- | --- | ------ | --- | ------ | -------- |
 | Relevant | 604  | 576 | 477 | 370    | 429 | 46     | **2502** |
 
-## Final Paper Set
+## 📌 Final Paper Set
 
-Full-text review finalized a set of **211 empirical studies** specifically targeting:
+After full-text screening, **211 empirical studies** were selected, addressing:
 
 * Educational settings and language acquisition.
-* Communication skills of typically developing children.
-* Clearly quantifiable developmental outcomes.
+* Communication skills in typically developing children.
+* Quantifiable developmental outcomes.
 
-This collection represents rigorously selected, peer-reviewed evidence for informed research and practice in robotic interaction in early childhood education.
+This collection represents carefully curated, high-quality research evidence for effective child-robot interaction across diverse domains.
