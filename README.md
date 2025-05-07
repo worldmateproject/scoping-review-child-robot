@@ -108,28 +108,28 @@ The filtering process was conducted based on predefined criteria. While some pap
 ---
 
 ### Refined Filtering Scope
-The refined filtering process focuses specifically on **child-robot interaction in educational settings**. The selection criteria include:
+
+The refined filtering process focuses specifically on **child-robot interaction in educational settings**, with an emphasis on **typically developing children**.
+
+The selection criteria include:
+
 - **Empirical or experimental research** on child-robot interaction, particularly in:
   - Language acquisition, communication skills, or vocabulary development (excluding purely conceptual models or theoretical discussions).
 - **Caregiving and emotional support applications**, such as:
   - Robot-assisted language learning (e.g., teaching new words, speech production, pronunciation, grammar).
   - Vocabulary enhancement (e.g., adaptive responses to a child's speech, interactive storytelling, conversational agents).
   - Communication skill development (e.g., dialogue engagement, prompting verbal responses, social interaction facilitation).
-  - Speech therapy or special needs support (e.g., for children with autism, speech delays, or cognitive disabilities).
-  - Adaptive, AI-powered interactions that tailor learning to a child's linguistic progress using machine learning.
-  - Studies measuring quantifiable outcomes in **language acquisition, verbal engagement, or communication skills**.
-  - AI-driven research enhancing **natural conversation abilities, interactive learning, and social engagement** through verbal communication.
+- **This review specifically excludes studies centered on neurodivergent children**, including those with autism spectrum disorders, speech or cognitive impairments, or other developmental differences.
+- **The focus is on typically developing children** to ensure the results reflect generalizable interactions in mainstream educational contexts.
+- Adaptive, AI-powered interactions that tailor learning to a child’s linguistic progress using machine learning.
+- Studies measuring quantifiable outcomes in **language acquisition, verbal engagement, or communication skills**.
+- AI-driven research enhancing **natural conversation abilities, interactive learning, and social engagement** through verbal communication.
 
 | Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
 |---------|------|------|------|--------|------|--------|-------|
 | Relevant | 604  | 576  | 477  | 370    | 429  | 46     | 2502  |
 
-This refined dataset provides a focused selection of studies that align with our research objectives in child-robot interaction for educational and developmental purposes.
-
-
-
-
-
+This refined dataset provides a focused selection of studies that align with our research objectives in child-robot interaction for educational and developmental purposes involving typically developing children.
 
 
 
