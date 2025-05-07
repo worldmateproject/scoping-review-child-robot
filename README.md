@@ -1,149 +1,88 @@
-# Systematic-Review
+## Systematic Review on Human-Robot and Child-Robot Interaction in Early Childhood Education
 
-This review examines the role of Human-Robot and Child-Robot Interaction in early childhood education, with a focus on language acquisition. It explores how social robots process multimodal inputs (speech, gaze, gestures) to enhance communication, sustain engagement, and adapt to children’s needs. Key topics include adaptive learning systems, emotion detection, real-time interaction, and ethical considerations such as privacy and emotional well-being. By highlighting current advancements and challenges, this paper provides insights for improving robot-assisted language learning and child development.
+This systematic review examines the methodologies and impacts of Human-Robot Interaction (HRI) and Child-Robot Interaction (CRI) within early childhood education, emphasizing language acquisition, adaptive learning systems, and multimodal communication (speech, gaze, gestures). It addresses the role of social robots in enhancing engagement, learning outcomes, and developmental progress, alongside ethical considerations like privacy and emotional well-being.
 
----
+## Search Query
 
-## Pre-Query Analysis Report
-This report presents an analysis of the queries used in the systematic review process. Each query was assessed for its ability to capture relevant studies, and based on this evaluation, the most comprehensive query was identified. 
+The comprehensive query utilized to retrieve relevant studies from academic databases:
 
-| Query ID | Query Key Search | Papers Retrieved (IEEE Xplore) |
-|----------|------------------|--------------------------------|
-| Q1       | (“Human-Robot Interaction” OR “Child-Robot Interaction”) AND (“Robots”) AND (“Education” OR “School” OR “Learning”) AND (“Child” OR “Childhood” OR “Children”) | 358 |
-| Q2       | (“Human-Robot Interaction” OR “Child-Robot Interaction”) AND (“Robots” OR “Social Robots”) AND (“Community” OR “Social”) AND (“Education” OR “School” OR “Learning”) | 1425 |
-| Q3       | (“Human-Robot Interaction” OR “Child-Robot Interaction”) AND (“Robots” OR “Social Robots”) AND (“Community” OR “Social”) AND (“Education” OR “School” OR “Learning” OR “Caregiver” OR “Child Directed Speech”) | 1480 |
-| Q4       | ((“Human-Robot Interaction” OR “Child-Robot Interaction” OR “Interaction”) AND (“Robot”) AND (“Child* OR “Community” OR “Social”) AND (“Education” OR “School” OR “Learning” OR “Caregiver” OR “Child-Directed Speech” OR “Talker”)) | 2596 |
-| Q5       | ((“Human-Robot Interaction” OR “Child-Robot Interaction” OR “Interaction”) AND (“Robot”) AND (“Child*”) AND (“Education” OR “School” OR “Learning” OR “Caregiver” OR “Child-Directed Speech” OR “Talker”)) | 604 |
-| Q6       | ((“Human-Robot Interaction” OR “Child-Robot Interaction” OR “Interaction”) AND (“Robot*”) AND (“Child*” OR “Community*” OR “Social*”) AND (“Education*” OR “School*” OR “Learn*” OR “Caregiver” OR “Child-Directed Speech” OR “Speech Interaction” OR “Talker”)) | 3186 |
-| Q7       | ((“Human-Robot Interaction” OR “Child-Robot Interaction” OR “Interaction”) AND (“Robot*”) AND (“Child*”) AND (“Education*” OR “School*” OR “Learn*” OR “Caregiver” OR “Child-Directed Speech” OR “Speech Interaction” OR “Talker”)) | 690 |
-| Q8       | ((“Human-Robot” OR “Child-Robot”) AND (“Robot”) AND (“Child*” OR “Communit*” OR “Social”) AND (“Education” OR “School” OR “Learn*” OR “Caregiver” OR “Teach*” OR “Child-Directed” OR “Speech” OR “Language” OR “Communication”)) | 2410 |
-| Q9       | (((“Human-Robot” OR “Child-Robot” OR “Interaction”) AND (“Robot*”) AND (“Child*” OR “Communit*” OR “Social*”) AND (“Education*” OR “School*” OR “Learn*” OR “Caregiver” OR “Child-Directed Speech” OR “Language” OR “Communication” OR “Teach*” OR “Talker”)) ) | 4065 |
-| Q10      | ((“Human-Robot” OR “Child-Robot” OR “Interaction”) AND (“Robot*”) AND (“Child*” OR “Communit*” OR “Social*”) AND (“Education*” OR “School*” OR “Learn*” OR “Caregiver” OR “Child-Directed” OR "Speech" OR “Languag*” OR “Communicat*” OR “Teach*” OR “Talker”)) | **4165** |
+```
+(("Human-Robot" OR "Child-Robot" OR "Interaction") AND ("Robot*") AND ("Child*" OR "Communit*" OR "Social*") AND ("Education*" OR "School*" OR "Learn*" OR "Caregiver" OR "Child-Directed" OR "Speech" OR "Languag*" OR "Communicat*" OR "Teach*" OR "Talker"))
+```
 
-The analysis showed that Query Q10 retrieved the largest number of papers (4,165), including all papers captured by the previous nine queries (Q1–Q9) from IEEE Xplore. As a result, Q10 is considered the most comprehensive query for this systematic review and will be used as the final query to ensure that no relevant papers are overlooked.
-![Image](https://github.com/user-attachments/assets/29ef2ab1-f8d5-4cc6-860c-0f37f38fcbd2)
+This query retrieved **4,165 papers** from IEEE Xplore.
 
----
+## Paper Retrieval (2015-2025)
 
-## Research Paper Retrieval Statistics
-This section presents data on the number of research papers retrieved using **Q10** across six major academic databases: IEEE, Web of Science (WoS), ACM, Scopus, ScienceDirect (SD), and PubMed. The data covers the years **2015 to 2025**, showing the trend of research paper retrieval over time. The primary objective of this study is to analyze the availability and growth of research articles in various academic databases, providing insights into publication trends in recent years. The table below displays the number of research papers retrieved from each database for the years  **2015 to 2025**. 
+Retrieval statistics from IEEE, Web of Science (WoS), ACM, Scopus, ScienceDirect (SD), and PubMed:
 
-| Year  | IEEE | WoS  | ACM  | Scopus | SD   | PubMed | Total  |
-|-------|------|------|------|--------|------|--------|--------|
-| 2015  | 233  | 210  | 369  | 447    | 352  | 37     |        |
-| 2016  | 294  | 264  | 481  | 431    | 348  | 43     |        |
-| 2017  | 309  | 313  | 514  | 545    | 404  | 51     |        |
-| 2018  | 350  | 373  | 644  | 577    | 448  | 70     |        |
-| 2019  | 401  | 408  | 553  | 648    | 560  | 75     |        |
-| 2020  | 373  | 477  | 830  | 1023   | 749  | 108    |        |
-| 2021  | 424  | 506  | 924  | 1021   | 925  | 188    |        |
-| 2022  | 596  | 550  | 1062 | 859    | 988  | 205    |        |
-| 2023  | 563  | 483  | 1258 | 893    | 1109 | 172    |        |
-| 2024  | 606  | 592  | 1743 | 1026   | 1430 | 157    |        |
-| 2025  | 10   | 24   | 83   | 53     | 439  | 12     |        |
-| **Total** | **4159** | **4200** | **8461** | **7523** | **7752** | **1118** | **33213** |
+| Year      | IEEE | WoS  | ACM  | Scopus | SD   | PubMed | Total     |
+| --------- | ---- | ---- | ---- | ------ | ---- | ------ | --------- |
+| 2015      | 233  | 210  | 369  | 447    | 352  | 37     | 1648      |
+| 2016      | 294  | 264  | 481  | 431    | 348  | 43     | 1861      |
+| 2017      | 309  | 313  | 514  | 545    | 404  | 51     | 2136      |
+| 2018      | 350  | 373  | 644  | 577    | 448  | 70     | 2462      |
+| 2019      | 401  | 408  | 553  | 648    | 560  | 75     | 2645      |
+| 2020      | 373  | 477  | 830  | 1023   | 749  | 108    | 3560      |
+| 2021      | 424  | 506  | 924  | 1021   | 925  | 188    | 3988      |
+| 2022      | 596  | 550  | 1062 | 859    | 988  | 205    | 4260      |
+| 2023      | 563  | 483  | 1258 | 893    | 1109 | 172    | 4478      |
+| 2024      | 606  | 592  | 1743 | 1026   | 1430 | 157    | 5554      |
+| 2025      | 10   | 24   | 83   | 53     | 439  | 12     | 621       |
+| **Total** | 4159 | 4200 | 8461 | 7523   | 7752 | 1118   | **33213** |
 
-This dataset represents the **retrieval of research papers** using Q10 from **six different academic databases**. The numbers indicate how many papers were found in each database for a given year. 
-![Illustration](Survey.png)
+### Key Trends
 
-### Key Observations:
-1. **Overall Growth**:  
-   - The number of retrieved papers increased significantly from 2015 to 2024.
-   - The highest number of papers retrieved was in **2024**, showing a peak in research publications.
-2. **Database Differences**:  
-   - **ACM** has the highest number of retrieved papers (**8,461 total**).
-   - **PubMed** has the lowest count (**1,118 total**), likely due to its focus on medical and life sciences.
-3. **Decrease in 2025**:  
-   - A sudden drop in 2025 may indicate incomplete data collection or a shift in research trends.
+* Publication volume significantly increased (2015-2024), peaking in 2024.
+* ACM yielded the highest number of papers; PubMed had the fewest due to specific domain relevance.
+* Data for 2025 suggests incomplete data or changing research interests.
 
-The data highlights the increasing volume of academic research over the years, particularly in **ACM, Scopus, and SD** databases. The significant rise in papers retrieved suggests that more research is being published and indexed across multiple databases.
+## Duplicate and Irrelevant Paper Removal
 
----
+Duplicate entries and papers categorized as theoretical frameworks or literature reviews were excluded:
 
-## Removing Duplicates
+| Source           | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total     |
+| ---------------- | ---- | ---- | ---- | ------ | ---- | ------ | --------- |
+| Remaining Papers | 3954 | 2852 | 2267 | 7131   | 5672 | 423    | **22299** |
 
-In this stage, duplicate papers are removed based on DOI and Title across multiple search engines, including IEEE, WoS, SD, Scopus, ACM, and PubMed. Additionally, review papers and those primarily presenting literature reviews are excluded. After this stage, the remaining papers are as follows:
+## Initial Relevance Filtering
 
-| Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
-|---------|------|------|------|--------|------|--------|-------|
-| Papers Remaining | 3,954 |2,852 | 2,267| 7,131| 5,672  | 423 | **22,299**  |
+Screening abstracts, titles, and keywords against set criteria:
 
----
+### Inclusion Criteria
 
-## Filtering by Abstract, Title, and Keywords
+* Empirical studies involving child-robot interactions.
+* Educational and developmental outcomes (language, social skills).
+* Quantifiable engagement and cognitive development measures.
+* Typically developing child populations.
 
-In the next stage, the remaining papers will be screened based on their Abstract, Title, and Author Keywords to filter those relevant to the study scope.
-This project involves processing a CSV file containing metadata for over 20,000 research papers on child-robot interaction in education, language learning, and social development. This project involves processing a dataset of over 20,000 research papers related to **child-robot interaction** in education, language learning, and social development. Using metadata (Title, Abstract), each paper is classified as **Relevant** or **Not Relevant** based on predefined inclusion and exclusion criteria.
+### Exclusion Criteria
 
-### Relevance Criteria
-#### Inclusion Criteria (Relevant Papers)
-A paper is classified as **Relevant** if it meets one or more of the following criteria:
-- **Empirical or experimental research** involving child-robot interaction (not just conceptual models or theoretical discussions).
-- **Education-focused applications**, including:
-  - Robot tutors & AI-driven learning (personalized education, engagement, cognitive development).
-  - Socialization & well-being (robot-assisted therapy, emotional support, companionship, developmental assistance).
-  - Language acquisition (robots aiding in vocabulary development, communication skills).
-  - Adaptive AI-powered interactions (machine learning models tailoring robotic responses to a child’s progress).
-  - Children with special needs (robot-assisted therapy for autism, speech delays, or cognitive disabilities).
-- **Studies providing measurable outcomes** in learning, engagement, cognitive development, or socialization.
-- **Research leveraging AI, machine learning, or adaptive models** to enhance child-robot educational experiences.
+* Non-empirical papers (reviews, theoretical discussions).
+* Papers lacking clear educational outcomes.
+* General HRI without specific child focus.
+* Neurodivergent populations or unrelated contexts.
 
-#### Exclusion Criteria (Not Relevant Papers)
-A paper is classified as **Not Relevant** if:
-- It is a **literature review, meta-analysis, or theoretical framework** rather than an empirical study.
-- It **lacks measurable outcomes** (e.g., opinion pieces, purely technical system descriptions).
-- It focuses on **general human-robot interaction** (HRI) without a clear emphasis on child-robot interaction.
-- It discusses **robots in non-relevant domains** (e.g., military, industrial applications, banking chatbots).
-- **Automatic Literature Review & Theoretical Work Detection**:  
-  Papers containing the following keywords in the **Title** or **Abstract** are automatically marked as **Not Relevant**, even if they discuss **child-robot interaction**, due to their lack of original empirical insights: “Systematic review”, “Meta-analysis”, “Survey of studies”, “Overview of research”, “Theoretical framework”, “Trends in research”, “Analysis of previous work”, “State of the art”, “Bibliometric analysis”, “Scoping review”. “Comprehensive review”, “A decade of research”, “A review of”, “A survey on”
+Initial screening identified **6412 relevant papers**:
 
-This classification ensures that only **empirical** and **practical** research on child-robot interaction is included for further analysis, excluding non-relevant or theoretical papers. Based on the initial screening of titles and abstracts from various databases, the total number of relevant papers identified is **6412**.
-
-| Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
-|---------|------|------|------|--------|------|--------|-------|
+| Source   | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
+| -------- | ---- | ---- | ---- | ------ | ---- | ------ | ----- |
 | Relevant | 1407 | 1222 | 1501 | 865    | 1331 | 86     | 6412  |
 
-The filtering process was conducted based on predefined criteria. While some papers might not be directly related, the criteria were intentionally set broader to ensure relevant papers were not excluded. This approach allowed us to capture all studies within the scope of our research.
+## Refined Filtering
 
----
+Further filtering emphasized studies explicitly addressing typically developing children and language development:
 
-### Refined Filtering Scope
+| Source   | IEEE | WoS | SD  | Scopus | ACM | PubMed | Total    |
+| -------- | ---- | --- | --- | ------ | --- | ------ | -------- |
+| Relevant | 604  | 576 | 477 | 370    | 429 | 46     | **2502** |
 
-The refined filtering process focuses specifically on **child-robot interaction in educational settings**, with an emphasis on **typically developing children**.
+## Final Paper Set
 
-The selection criteria include:
+Full-text review finalized a set of **211 empirical studies** specifically targeting:
 
-- **Empirical or experimental research** on child-robot interaction, particularly in:
-  - Language acquisition, communication skills, or vocabulary development (excluding purely conceptual models or theoretical discussions).
-- **Caregiving and emotional support applications**, such as:
-  - Robot-assisted language learning (e.g., teaching new words, speech production, pronunciation, grammar).
-  - Vocabulary enhancement (e.g., adaptive responses to a child's speech, interactive storytelling, conversational agents).
-  - Communication skill development (e.g., dialogue engagement, prompting verbal responses, social interaction facilitation).
-- **This review specifically excludes studies centered on neurodivergent children**, including those with autism spectrum disorders, speech or cognitive impairments, or other developmental differences.
-- **The focus is on typically developing children** to ensure the results reflect generalizable interactions in mainstream educational contexts.
-- Adaptive, AI-powered interactions that tailor learning to a child’s linguistic progress using machine learning.
-- Studies measuring quantifiable outcomes in **language acquisition, verbal engagement, or communication skills**.
-- AI-driven research enhancing **natural conversation abilities, interactive learning, and social engagement** through verbal communication.
+* Educational settings and language acquisition.
+* Communication skills of typically developing children.
+* Clearly quantifiable developmental outcomes.
 
-| Source  | IEEE | WoS  | SD   | Scopus | ACM  | PubMed | Total |
-|---------|------|------|------|--------|------|--------|-------|
-| Relevant | 604  | 576  | 477  | 370    | 429  | 46     | 2502  |
-
-This refined dataset provides a focused selection of studies that align with our research objectives in child-robot interaction for educational and developmental purposes involving typically developing children.
-
-
-### Final Paper Set After Full-Text Screening
-
-Following the initial filtering and metadata screening process, a full-text review was conducted to assess the eligibility of each study based on our inclusion and exclusion criteria. This review process ensured that only high-quality, relevant research focused on **child-robot interaction in educational contexts with typically developing children** was retained.
-
-As a result, a final set of **211 papers** was selected for inclusion in the systematic review.
-
-These studies:
-- Align with the core focus on **empirical research** involving **typically developing children**.
-- Address language acquisition, communication development, and interactive learning through robotic systems.
-- Exclude conceptual-only articles, duplicates, and studies involving **neurodivergent populations** or unrelated domains.
-
-This final dataset represents the most relevant, peer-reviewed evidence base supporting our research questions and analysis framework.
-
-
-
+This collection represents rigorously selected, peer-reviewed evidence for informed research and practice in robotic interaction in early childhood education.
