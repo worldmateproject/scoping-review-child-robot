@@ -1,4 +1,4 @@
-## Systematic Review on Human-Robot and Child-Robot Interaction in Early Childhood Education
+## Systematic Review on Child-Robot Interaction in Early Childhood Education
 
 This systematic review examines the methodologies and impacts of Human-Robot Interaction (HRI) and Child-Robot Interaction (CRI) within early childhood education, emphasizing language acquisition, adaptive learning systems, and multimodal communication (speech, gaze, gestures). It addresses the role of social robots in enhancing engagement, learning outcomes, and developmental progress, alongside ethical considerations like privacy and emotional well-being.
 
