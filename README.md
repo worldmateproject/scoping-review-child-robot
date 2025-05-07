@@ -132,4 +132,18 @@ The selection criteria include:
 This refined dataset provides a focused selection of studies that align with our research objectives in child-robot interaction for educational and developmental purposes involving typically developing children.
 
 
+### Final Paper Set After Full-Text Screening
+
+Following the initial filtering and metadata screening process, a full-text review was conducted to assess the eligibility of each study based on our inclusion and exclusion criteria. This review process ensured that only high-quality, relevant research focused on **child-robot interaction in educational contexts with typically developing children** was retained.
+
+As a result, a final set of **211 papers** was selected for inclusion in the systematic review.
+
+These studies:
+- Align with the core focus on **empirical research** involving **typically developing children**.
+- Address language acquisition, communication development, and interactive learning through robotic systems.
+- Exclude conceptual-only articles, duplicates, and studies involving **neurodivergent populations** or unrelated domains.
+
+This final dataset represents the most relevant, peer-reviewed evidence base supporting our research questions and analysis framework.
+
+
 
