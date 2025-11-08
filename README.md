@@ -1,5 +1,3 @@
-# 📚 README.md
-
 # Systematic Review: Child-Robot Interaction 
 
 ## Introduction
@@ -28,17 +26,6 @@ This document outlines the structured methodology used to conduct a systematic r
 
 The review process is divided into major procedural stages designed to manage data collection, consolidation, filtering, classification, and analysis in a transparent and replicable way.
 
-The stages are:
-1. **Data Collection**
-2. **Consolidation**
-3. **Duplicate Removal**
-4. **Relevance Filtering**
-   - Stage 1 – Broad Filtering  
-   - Stage 2 – Narrow Filtering  
-   - Stage 3 – Specific Filtering
-5. **Sorting and Manual Screening**
-6. **Classification**
-7. **Analysis and Reporting**
 
 ---
 
@@ -62,7 +49,6 @@ A unified and structured set of Boolean search queries was developed for each da
 All search strings were adapted for the syntax and field specifications of each database to maximize recall while ensuring conceptual consistency.
 
 ---
-
 
 ### 2. Consolidation
 
@@ -157,35 +143,27 @@ Each filtering stage produced two datasets:
 ## 5. Full-text Articles Assessed
 In this satge, two ways have been invovled 
 First,  Python Script script (looking at Config.py using Sorting_Stage) was used to exclude papers not directly relevant to the research focus. Specifically, records were removed if they primarily involved topics such as Neurodivergence (e.g., Autism), Review articles, Ethics, Healthcare applications, Exoskeletons, Swarm Robotics, or Surgical Robotics. 
-Total Records Excluded: (n = 393), 
-Total Records Included:(n = 1899)
+Total Records Excluded: **(n = 393)**, 
+Total Records Included:**(n = 1899)**
 
 The second is LLM Prompt along side the Manual Double check (Involved OpenAI GPT-based API (gpt-4.1, and gpt-4o) Refer to LLM_Screening.py and Manual double-Check).
 
 ### Child–Robot Interaction Paper Screening (LLM-Based)
 The tool employs a Large Language Model (LLM) to classify papers as **related** or **not related** according to strict inclusion criteria.
 The pipeline reads research papers in PDF format, extracts text, and screens each document using an OpenAI model.  
-It outputs an Excel file summarizing whether each paper meets the eligibility criteria for inclusion in the review.
 
 **Goal:**  
-Filter approximately **1,899 candidate papers** to about **207 eligible studies** for detailed data extraction.
+Filter approximately **1,899 candidate papers** to  **eligible studies** for detailed data extraction.
 
 **Features:**
-- ✅ Fully automated screening of PDFs — no manual tagging required  
-- ✅ Applies consistent, transparent eligibility criteria  
+- ✅ Fully automated screening of PDFs — with manual check required  
+- ✅ Applies consistent, transparent eligibility criteria using a Prompt **Refer to LLM_Screening.py** 
 - ✅ Produces clear output with:
   - `"Related"` → “Yes” / “No”  
   - `"Justification"` → one-line rationale for inclusion/exclusion  
 - ✅ Compatible with GPT-4.1-mini or GPT-4-turbo via the OpenAI API  
-- ✅ Exports results to `Screening_Results.xlsx` for filtering and review  
-
-
-Refer to LLM_Screening.py
 
 ---
 
 ## 6. Included Sources of Evidence
- Included Sources of Evidence (n=207)
-
-
-
+ Included Sources of Evidence **(n=207)**
