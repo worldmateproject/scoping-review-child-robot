@@ -147,17 +147,17 @@ STAGE3 = (
 ## 5. Full-text Articles Assessed
 In this satge, two levels have been invovled 
 
-### Python Script-Based and Manual Check 
-First,  Python Script (looking at Config.py using Sorting_Stage) was used to exclude papers not directly relevant to the research focus. Specifically, records were removed if they primarily involved topics such as Neurodivergence (e.g., Autism), Review articles, Ethics, Healthcare applications, Exoskeletons, Swarm Robotics, or Surgical Robotics.
+### A. Python Script-Based and Manual Check 
+Python Script (see Config.py using Sorting_Stage) was used to exclude papers not directly relevant to the research focus. Specifically, records were removed if they primarily involved topics such as Neurodivergence (e.g., Autism), Review articles, Ethics, Healthcare applications, Exoskeletons, Swarm Robotics, or Surgical Robotics.
 
 - Excluded: 393  papers
 - hncluded: 1899 papers
 
-The second is LLM Prompt along side the Manual Double check (Involved OpenAI GPT-based API (gpt-4.1, and gpt-4o) Refer to LLM_Screening.py and Manual double-Check).
+---
+### B. LLM-Based and Manual Check 
+Second is Large Language Model (LLM) Prompt along side the Manual Double check (Involved OpenAI GPT-based API (gpt-4.1, and gpt-4o) Refer to LLM_Screening.py and Manual double-Check).
 
-### LLM-Based and Manual Check 
-
-Large Language Models (LLMs) were used to assess the remaining papers as implemented in LLM_Screening.py. Specifically, OpenAI GPT-based APIs (gpt-4.1 and gpt-4o) classified full-text papers as “related” or “not related” based on the criteria outlined in the Eligibility and Inclusion section. Each classification included a justification statement to ensure transparency.
+LLMs were used to assess the remaining papers as implemented in LLM_Screening.py. Specifically, OpenAI GPT-based APIs (gpt-4.1 and gpt-4o) classified full-text papers as “related” or “not related” based on the criteria outlined in the Eligibility and Inclusion section. Each classification included a justification statement to ensure transparency.
 Using LLMs significantly scaled the screening process, enabling faster and more consistent evaluation of a large volume of papers for a comprehensive literature review. To maintain reliability, all LLM outputs were manually reviewed by two researchers to confirm alignment with inclusion criteria.
 Outcome:
 
@@ -166,3 +166,20 @@ Outcome:
 
 Potential drawbacks, such as occasional misclassification or over-reliance on prior testing, were mitigated through manual verification and found to be negligible.
 
+---
+
+## 6. Data Extraction: Coding of Study Characteristics
+The coding process and extracted features are documented in Final_Full_Features_ScRi.xlsx. Below are the key study characteristics and their rationale:
+
+1. Sample Size: Indicates methodological maturity and research scope. Smaller samples often reflect exploratory studies, while larger samples suggest more rigorous designs.
+2. Participant Age: Captures developmental stage; coded as minimum, maximum, and range due to frequent omission of mean/median ages.
+3. Research/Application Domain: Categorized into three global domains:
+    - Academic Support & Tutoring
+    - Language & Literacy Development
+    - Social & Emotional Development
+    Sub-topics were identified based on learning domain or interaction type.
+
+4. Country of Research: Assigned based on all authors’ affiliations; multi-country studies coded as “Multiple.”
+5. Robot Role: Classified as Tutor, Peer, Tutee, Assistant, Storyteller, or Other (double-checked by two coders).
+6. Interaction Control Approach: Categories include Rule-Based/Scripted, Wizard of Oz, Toolkit/Platform-Based, Reinforcement Learning, Other ML (Non-LLM), LLM, and Not Specified.
+7. Robot Type (Platform): Recorded by brand/type (e.g., NAO, custom-built) and analyzed by Type Frequency (NAO vs. others) and Humanoid Status (humanoid vs. non-humanoid).
