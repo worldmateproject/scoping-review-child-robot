@@ -1,10 +1,10 @@
-# Systematic Review: Child-Robot Interaction 
+# Scoping Review: Child-Robot Interaction 
 
 ## Introduction
 
-This systematic review examines methodologies and impacts of Child-Robot Interaction (CRI) across various domains, focusing particularly on language acquisition, adaptive learning systems, multimodal communication (speech, gaze, gestures), and emotional and social development. It highlights how social robots enhance engagement, learning outcomes, and developmental progress, along with addressing ethical concerns such as privacy and emotional well-being.
+This scoping review examines methodologies and impacts of Child-Robot Interaction (CRI) across various domains, focusing particularly on language acquisition, adaptive learning systems, multimodal communication (speech, gaze, gestures), and emotional and social development. It highlights how social robots enhance engagement, learning outcomes, and developmental progress, along with addressing ethical concerns such as privacy and emotional well-being.
 
-## Comprehensive Search Query
+## Boolean Search Query
 
 The extensive query used to retrieve relevant studies from academic databases:
 
@@ -16,16 +16,15 @@ The extensive query used to retrieve relevant studies from academic databases:
     ("Education" OR "School" OR "Learn*" OR "Caregiver" OR "Teach*" OR "Child-directed" OR "Speech" OR "Language" OR "Communication")
 )
 ```
-## Systematic Review Workflow and Data Processing Pipeline
+## Scoping Review Workflow and Data Processing Pipeline
 
-This document outlines the structured methodology used to conduct a systematic review integrating automated data processing and staged filtering. The workflow ensures transparency, reproducibility, and alignment with systematic review standards such as PRISMA.
+This repo outlines the structured methodology used to conduct a scoping review integrating automated data processing and staged filtering. The workflow ensures transparency, reproducibility, and alignment with scoping review standards such as PRISMA.
 
 ---
 
 ### Overview
 
 The review process is divided into major procedural stages designed to manage data collection, consolidation, Scanning (Title and abstract), Full text screening, and analysis in a transparent and replicable way.
-
 
 ---
 
@@ -99,9 +98,9 @@ A final unique dataset was produced, containing only one instance of each public
 
 Following de-duplication, the dataset underwent three automated relevance filtering stages to progressively refine the corpus of studies.
 
-### STAGE 1 — Broad Scanning
-Involved Python script (looking at Config.py using STAGE1 (n =9735). Total Records Excluded: (n=12564) 
-# Stage 1 — Broad HRI and CRI
+### STAGE 1
+STAGE 1 is a broad scanning stage that is focussed on the general context of the terms of HRI and CRI. It is involved Python script (see Config.py using STAGE1)
+
 STAGE1 = (
     '((Human-Robot OR Human Robot OR Human-robot Interaction OR Human robot Interaction OR HRI OR '
     'Child Robot OR Child-Robot OR Child-robot Interaction OR Child robot Interaction OR CRI OR Interact*) AND '
@@ -110,10 +109,15 @@ STAGE1 = (
     '(Social* OR Communicat* OR Dialogue OR Speech OR Languag* OR Talker OR Convers* OR Play OR Engagement OR Emotion* OR Cognit* OR Joint Attention OR Autism OR Neurodivergent OR Development* OR Interaction* OR Support OR Therapy OR Assistive OR Companion OR Service OR Healthcare OR Educat* OR Learn* OR Teach* OR Child-Directed OR vocaliz* OR vocabular*))'
 )
 
+- Excluded: 12564  papers
+- hncluded: 9735 papers 
+
+
 ---
 
-### STAGE 2 — Narrow Scanning
-- Involved Python script (looking at Config.py using STAGE2) (n = 5097). Total Records Excluded: (n= 4638) 
+### STAGE 2
+STAGE 2 is a narrow scanning stage which is scoped to the papers that certainly cover user groups of children or paediatrics with educational, communicative, or social outcomes (see Config.py using STAGE2).
+
 STAGE2 = (
     '((Child Robot OR Child-Robot OR Child-robot Interaction OR Child robot Interaction OR CRI OR Interact*) AND '
     '(Robot* OR Robotics) AND '
@@ -121,10 +125,13 @@ STAGE2 = (
     '(Social* OR Communicat* OR Dialogue OR Speech OR Languag* OR Talker OR Play OR Engagement OR Emotion* OR Cognit* OR Joint Attention OR Development* OR Interaction* OR Support OR Assistive OR  Educat* OR Learn* OR Teach* OR Child-Directed OR vocaliz* OR vocabular*))'
 )
 
+- Excluded: 4638  papers
+- hncluded: 5097 papers
 ---
 
-### STAGE 3 — Specific Scanning
-- Involved Python script (looking at Config.py using STAGE3) (n = 2292). Total Records Excluded: (n= 2,805) 
+### STAGE 3
+STAGE 3 is a more specific scanning stage, where the specific query was applied to the retained papers in stage 2. In this stage, the papers in which robots and children or their caregivers are directly interacting with each other in educational, clinical, developmental, or support contexts were retained (see Config.py using STAGE3).
+
 STAGE3 = (
     '((Child Robot OR Child-Robot OR Child-robot Interaction OR Child robot Interaction OR CRI OR Interact*) AND '
     '(Robot* OR Robotics) AND '
@@ -132,33 +139,30 @@ STAGE3 = (
     '(Social* OR Communicat* OR Dialogue OR Speech OR Languag* OR Talker OR Play OR Engagement OR Emotion* OR Cognit* OR Joint Attention OR Development* OR Interaction* OR Support OR Assistive OR  Educat* OR Learn* OR Teach* OR Child-Directed OR vocaliz* OR vocabular*))'
 )
 
+- Excluded: 4638  papers
+- hncluded: 2805 papers
+
 ---
 
 ## 5. Full-text Articles Assessed
-In this satge, two ways have been invovled 
+In this satge, two levels have been invovled 
+
 ### Python Script-Based and Manual Check 
-First,  Python Script (looking at Config.py using Sorting_Stage) was used to exclude papers not directly relevant to the research focus. Specifically, records were removed if they primarily involved topics such as Neurodivergence (e.g., Autism), Review articles, Ethics, Healthcare applications, Exoskeletons, Swarm Robotics, or Surgical Robotics. 
-Total Records Excluded: **(n = 393)**, 
-Total Records Included:**(n = 1899)**
+First,  Python Script (looking at Config.py using Sorting_Stage) was used to exclude papers not directly relevant to the research focus. Specifically, records were removed if they primarily involved topics such as Neurodivergence (e.g., Autism), Review articles, Ethics, Healthcare applications, Exoskeletons, Swarm Robotics, or Surgical Robotics.
+
+- Excluded: 393  papers
+- hncluded: 1899 papers
 
 The second is LLM Prompt along side the Manual Double check (Involved OpenAI GPT-based API (gpt-4.1, and gpt-4o) Refer to LLM_Screening.py and Manual double-Check).
 
 ### LLM-Based and Manual Check 
-The tool employs a Large Language Model (LLM) to classify papers as **related** or **not related** according to strict inclusion criteria.
-The pipeline reads research papers in PDF format, extracts text, and screens each document using an OpenAI model.  
 
-**Goal:**  
-Filter approximately **1,899 candidate papers** to  **eligible studies** for detailed data extraction.
+Large Language Models (LLMs) were used to assess the remaining papers as implemented in LLM_Screening.py. Specifically, OpenAI GPT-based APIs (gpt-4.1 and gpt-4o) classified full-text papers as “related” or “not related” based on the criteria outlined in the Eligibility and Inclusion section. Each classification included a justification statement to ensure transparency.
+Using LLMs significantly scaled the screening process, enabling faster and more consistent evaluation of a large volume of papers for a comprehensive literature review. To maintain reliability, all LLM outputs were manually reviewed by two researchers to confirm alignment with inclusion criteria.
+Outcome:
 
-**Features:**
-- ✅ Fully automated screening of PDFs — with manual check required  
-- ✅ Applies consistent, transparent eligibility criteria using a Prompt **Refer to LLM_Screening.py** 
-- ✅ Produces clear output with:
-  - `"Related"` → “Yes” / “No”  
-  - `"Justification"` → one-line rationale for inclusion/exclusion  
-- ✅ Compatible with GPT-4.1-mini or GPT-4-turbo via the OpenAI API  
+- Excluded: 1693 papers
+- hncluded: 206 papers (final evidence base for this scoping review)
 
----
+Potential drawbacks, such as occasional misclassification or over-reliance on prior testing, were mitigated through manual verification and found to be negligible.
 
-## 6. Included Sources of Evidence
- Included Sources of Evidence **(n=207)**
